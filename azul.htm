@@ -2,6 +2,65 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+///////////*menu/////////////////
+<style type="text/css">
+<!--
+
+.coolmenu{
+width: 200px;
+}
+
+.coolmenu td{
+background-color:bisque;
+cursor:hand;
+font-family:Arial;
+font-weight:bold;
+}
+
+.coolmenu td a{
+text-decoration:none;
+color:black;
+}
+
+.coolmenu td#boxdescription{
+background: ivory;
+height: 25px;
+font-weight: normal;
+}
+
+-->
+</style>
+
+<script language="javascript">
+<!--
+
+/*
+Cool Table Menu
+By Clarence Eldefors (http://www.freebox.com/cereweb) with modifications from javascriptkit.com
+Visit http://javascriptkit.com for this and over 400+ other scripts
+*/
+
+
+
+function movein(which,html){
+which.style.background='coral'
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML=html
+else
+boxdescription.innerHTML=html
+}
+
+function moveout(which){
+which.style.background='bisque'
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML=' '
+else
+boxdescription.innerHTML=' '
+}
+
+//-->
+</script>
+///////////*menu/////////////////
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>Untitled Document</title>
 <style type="text/css">
@@ -31,12 +90,6 @@ a:active {
 </style></head>
 
 <body>
-<div id="Layer1" class="style1" style="position:absolute; left:12px; top:23px; width:67px; height:35px; z-index:1"><a href="index.html" target="mainFrame">INICIO</a></div>
-<div id="Layer2" class="style1" style="position:absolute; left:9px; top:65px; width:69px; height:32px; z-index:2"><a href="contacto.htm" target="mainFrame">CONTACTOS</a></div>
-<div id="Layer3" class="style1" style="position:absolute; left:6px; top:108px; width:122px; height:29px; z-index:3"><a href="links.htm" target="mainFrame">ENLACES</a></div>
-<div id="Layer3" class="style1" style="position:absolute; left:6px; top:149px; width:122px; height:29px; z-index:3"><a href="musica.htm" target="mainFrame">MUSICA</a></div>
-<div id="Layer3" class="style1" style="position:absolute; left:8px; top:186px; width:122px; height:29px; z-index:3"><a href="video.htm" target="mainFrame">VIDEO</a></div>
-<div id="Layer3" class="style1" style="position:absolute; left:9px; top:226px; width:122px; height:29px; z-index:3"><a href="mouse.htm" target="mainFrame">DRIVERS</a></div>
 <div id="Layer4" style="position:absolute; left:3px; top:618px; width:126px; height:167px; z-index:4"><!--Dayspedia.com widget-->
   <div class="DPDC" cityid="2029" lang="es" id="dayspedia_widget_33d7c967b84a0173" host="https://dayspedia.com" ampm="true" nightsign="true" sun="false" style="padding: 16px 16px 24px; background-color: rgb(5, 5, 5);">
 
@@ -111,5 +164,40 @@ a:active {
 	</script>
 	<!--/DPDC-->
 </div><!--Dayspedia.com widget ENDS--></div>
+
+<div id="Layer5" style="position:absolute; left:4px; top:58px; width:96px; height:268px; z-index:5">
+  <table class="coolmenu" bgcolor="black" border="1" bordercolor="black" cellpadding="2" cellspacing="0">
+
+<tr>
+<td bordercolor="black" id="choice1" onmouseover="movein(this,'Pagina principal')" onmouseout="moveout(this)"">
+<a href="index.html" target="mainFrame">INICIO</a></td>
+</tr>
+
+<td bordercolor="black" id="choice2" onmouseover="movein(this,'Comenta y conocenos')" onmouseout="moveout(this)">
+<a href="contacto.htm" target="mainFrame">CONTACTOS</a></td>
+</tr>
+
+  <td bordercolor="black" id="choice3" onmouseover="movein(this,'Siguenos')" onmouseout="moveout(this)"><a href="links.htm" target="mainFrame">ENLACES</a></td>
+</tr>
+
+  <td bordercolor="black" id="choice4" onmouseover="movein(this,'Disfruta de audios')" onmouseout="moveout(this)"><a href="musica.htm" target="mainFrame">MUSICA</a></td>
+</tr>
+
+   <td bordercolor="black" id="choice4" onmouseover="movein(this,'Disfruta de videos')" onmouseout="moveout(this)"><a href="video.htm" target="mainFrame">VIDEO</a></td>
+</tr>
+
+   <td bordercolor="black" id="choice4" onmouseover="movein(this,'Descarga drivers')" onmouseout="moveout(this)"><a href="mouse.htm" target="mainFrame">DRIVERS</a></td>
+</tr>
+
+<td bordercolor="black" id="choice4" onmouseover="movein(this,'Efecto de cursor')" onmouseout="moveout(this)"><a href="text_animado.htm" target="mainFrame">CURSOR</a></td>
+</tr>
+
+<tr>
+<td bordercolor="black" id="boxdescription"></td></tr>
+</table>
+
+<p>This free script provided by<br />
+</p>
+</div>
 </body>
 </html>

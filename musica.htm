@@ -2,6 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>Untitled Document</title>
 <style type="text/css">
@@ -9,7 +10,42 @@
 body {
 	background-color: #000000;
 }
--->
+body {
+	background-color: #000000;
+}
+
+<style type="text/css">
+
+.flashclass{ /*sample CSS class added to image slideshow container*/
+width: 200px; /*a width should be defined for transition to work*/
+border: 5px solid orange;
+padding: 5px;
+}
+
+.flashclass img{
+border-width: 0;
+}
+
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+body,td,th {
+	color: #FFFFFF;
+}
+</style>
+
+<script type="text/javascript" src="transitionshow.js">
+
+/***********************************************
+* Random Transitions Slideshow- by JavaScript Kit (www.javascriptkit.com)
+* This notice must stay intact for usage
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+***********************************************/
+
+</script>
+
+
 </style>
 <script language="JavaScript" type="text/JavaScript">
 <!--
@@ -21,14 +57,35 @@ function MM_reloadPage(init) {  //reloads the window if Nav4 resized
 MM_reloadPage(true);
 //-->
 </script>
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
 
 <body>
-<div id="Layer1" style="position:absolute; left:1128px; top:74px; width:263px; height:202px; z-index:1"><img src="musica-musicos-instrumentos-gifmaniacos.es-3.gif" width="267" height="266"></div>
+<div id="Layer1" style="position:absolute; left:657px; top:55px; width:263px; height:202px; z-index:1"><img src="musica-musicos-instrumentos-gifmaniacos.es-3.gif" width="267" height="266"></div>
 <div id="Layer2" style="position:absolute; left:289px; top:54px; width:305px; height:281px; z-index:2"><img src="iron-maiden_speed-of-light.jpg" width="306" height="304"></div>
 <div id="Layer3" style="position:absolute; left:287px; top:371px; width:306px; height:96px; z-index:3">
   <embed src="iron-maiden-speed-of-light-hq.mp3" width="307" height="94"></embed>
 </div>
-<div id="Layer4" style="position:absolute; left:1012px; top:415px; width:523px; height:237px; z-index:4"><img src="equalizador.gif" width="524" height="250"></div>
+<div id="Layer4" style="position:absolute; left:1009px; top:55px; width:523px; height:237px; z-index:4"><img src="equalizador.gif" width="524" height="250"></div>
+<div id="Layer5" style="position:absolute; left:1035px; top:454px; width:331px; height:278px; z-index:5">
+<script type="text/javascript">
+
+var flashyshow=new flashyslideshow({ //create instance of slideshow
+	wrapperid: "myslideshow", //unique ID for this slideshow
+	wrapperclass: "flashclass", //desired CSS class for this slideshow
+	imagearray: [
+		["album1.jpg", "http://4.bp.blogspot.com/_YOniJhrmrvQ/TLyq3jsXxrI/AAAAAAAAA_I/L3eFDmWQKjA/s1600/Iron_Maiden_-_Run_to_the_Hills.jpg"],
+		["album2.jpg", "https://letrasbd.com/i/bands/350/iron-maiden-the-number-of-the-beast.jpg"],
+		["album3.jpg", "https://parolesbd.com/i/bands/350/iron-maiden-a-matter-of-life-and-death.jpg"],
+		["album4.jpg", "https://letrasbd.com/i/bands/350/iron-maiden-fear-of-the-dark.jpg"],
+		["album5.jpg", "https://i.pinimg.com/474x/30/40/11/304011482abccf3c282b6172f0fd221e.jpg"]
+	],
+	pause: 2000, //pause between content change (millisec)
+	transduration: 1000 //duration of transition (affects only IE users)
+})
+
+</script></div>
+<div id="Layer6" style="position:absolute; left:1032px; top:392px; width:332px; height:55px; z-index:6">
+  <div align="center"><span class="style1">Otros Albums / Galeria </span></div>
+</div>
 </body>
 </html>
